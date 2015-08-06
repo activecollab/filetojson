@@ -1,0 +1,28 @@
+{
+  "name" : "activecollab/filetojson",
+  "type": "library",
+  "description": "Read file and return data as an array of serialisable object",
+  "prefer-stable": true,
+  "keywords": [ "filesystem", "csv", "json", "vcard", "activecollab" ],
+  "homepage": "https://labs.activecollab.com",
+  "authors": [
+    {
+      "name": "Ilija Studen",
+      "email": "ilija.studen@activecollab.com"
+    }
+  ],
+  "require" : {
+    "php": ">=5.4.0",
+    "sabre/vobject" : "~3.4"
+  },
+  "require-dev" : {
+    "phpunit/phpunit": "~4.7"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "ActiveCollab\\FileToJson\\": "src",
+      "ActiveCollab\\FileToJson\\Test\\": "test/src"
+    }
+  }
+}
